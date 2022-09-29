@@ -84,7 +84,6 @@ This method should return true if the number of character in the string even, or
 */
 public static boolean isEven(String s){
     	boolean b;
-	
 		if (s.length() % 2 == 0) {
 			 b = true;
 		} else {
@@ -100,9 +99,13 @@ This method should return an array of integer where all of the elements have bee
 */
 public static int[] transformIntArr(int[] intArr){
     
-    // logic
+    for (int i = 0; i < intArr.length; i++){
+		if ( intArr[i] % 3 == 0){
+			intArr[i] = intArr[i] * 2;
+		}
+	}
 
-    return new int[5];
+    return intArr;
 }
 
 /*
