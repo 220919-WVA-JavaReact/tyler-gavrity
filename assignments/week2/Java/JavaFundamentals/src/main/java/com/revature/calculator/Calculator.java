@@ -12,7 +12,7 @@ public class Calculator {
     //Use those methods in the main to make the code more readable and easy to follow
     public static void main(String[] args) {
         //Switch case with options is going to be here
-        String operation = 1;
+        int operation = 1;
         switch (operation) {
             case 1:
                 System.out.println("Addition");
