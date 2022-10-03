@@ -28,7 +28,7 @@ public class Calculator {
         System.out.println("Here at the Calculation Station you have four options");
         System.out.println("Please choose one");
         System.out.println("Addition, Subtraction, Multiplication, or Division");
-        //the next set of code assigns there answer to a variable and saves it
+        //the next set of code assigns their answer to a variable and saves it
         String operation = input.nextLine();
         System.out.println("Thank you for choosing " + operation);
         System.out.println("+------------------------------------------------------+");
@@ -46,47 +46,25 @@ public class Calculator {
             switch (operation) {
                 case "Addition":
                     System.out.println("The answer for adding these two numbers together is " + addition(a,b));
+                    main(null);
                     break;
                 case "Subtraction":
                     System.out.println("The answer for subtraction these two numbers together is " + subtraction(a,b));
+                    main(null);
                     break;
                 case "Multiplication":
                     System.out.println("The answer for multiplying these two numbers together is " + multiplication(a,b));
+                    main(null);
                     break;
                 case "Division":
                     System.out.println("The answer for dividing by these two numbers together is " + division(a,b));
+                    main(null);
+                    break;
+                default:
+                    System.out.println("Please enter a valid operation");
                     break;
             }
-        System.out.println("+------------------------------------------------------+");
-//        } else {
-//            System.out.println("Please try again");
-//        }
-
-
-
-
-
-
-
-
-
-
-        //Switch case with options is going to be here
-//        int operation = 1;
-//        switch (operation) {
-//            case "Addition":
-//                System.out.println("Addition");
-//                break;
-//            case "Subtraction":
-//                System.out.println("Subtraction");
-//                break;
-//            case "Multiplication":
-//                System.out.println("Multiplication");
-//                break;
-//            case "Division":
-//                System.out.println("Division");
-//                break;
-//        }
+//        System.out.println("+------------------------------------------------------+");
 
 
     }
