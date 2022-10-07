@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class App {
 
+
     // Inside my App class is all the information and logic to start and run the application
     // Menu logic should be here and this should call upon the SERVICE layer to do any logic for us
 
@@ -43,7 +44,7 @@ public class App {
 
         // We'll want to prompt the user to either login or to register
 
-        System.out.println("Press 1 to Login. Press 2 to register");
+        System.out.println("Press 1 to Login. Press 2 to register press 3 to view");
 
         Scanner sc = new Scanner(System.in);
 
@@ -89,6 +90,8 @@ public class App {
 
             // Commenting out everything above and moving it to TeacherService Class
             loggedInTeacher = ts.register();
+        } else if (choice.equals("3")){
+            ts.getAllTeachers();
         }
 
 

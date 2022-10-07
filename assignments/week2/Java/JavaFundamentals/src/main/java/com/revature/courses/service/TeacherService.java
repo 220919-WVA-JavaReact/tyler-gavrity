@@ -2,8 +2,10 @@ package com.revature.courses.service;
 
 import com.revature.courses.dao.TeacherDAO;
 import com.revature.courses.dao.TeacherDAOImpl;
+import com.revature.courses.dao.TeacherDAOImplProstgres;
 import com.revature.courses.models.Teacher;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class TeacherService {
@@ -15,7 +17,7 @@ public class TeacherService {
 
     // Whenever we want to make a call to the database we need to provide a TeacherDao implemementation so I'll create
     // one at the class level
-    TeacherDAO td = new TeacherDAOImpl(); // <--- Can change the implementation whenever I want
+    TeacherDAO td = new TeacherDAOImplProstgres(); // <--- Can change the implementation whenever I want
 
     // Need to add in a Scanner to update the method
     Scanner sc = new Scanner(System.in);
@@ -67,5 +69,16 @@ public class TeacherService {
 
         return teacher;
 
+    }
+
+    //Create a new method to see all teachers
+    public void getAllTeachers(){
+        System.out.println("Using the database to return teachers");
+        List<Teacher> teacherList = td.getAllTeachers();
+
+        //Print allteachers
+        for(Teacher teacher: teacherList){
+            System.out.println(teacher);
+        }
     }
 }

@@ -2,6 +2,8 @@ package com.revature.courses.dao;
 
 import com.revature.courses.models.Teacher;
 
+import java.util.List;
+
 public interface TeacherDAO {
 
     // Inside here we are providing the basic requirements we want our DAO to have
@@ -12,6 +14,10 @@ public interface TeacherDAO {
     Teacher getByUsername(String username);
 
     Teacher createTeacher(String first, String last, String username, String password);
+
+    //I'm going to add one more method to speed up the process of showing off some of this material
+
+    List<Teacher> getAllTeachers();
 }
 
 

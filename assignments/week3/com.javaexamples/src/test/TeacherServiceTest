@@ -1,0 +1,64 @@
+import com.revature.courses.dao.TeacherDAO;
+import com.revature.courses.models.Teacher;
+import com.revature.courses.service.TeacherService;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+
+public class TeacherServiceTest {
+
+    // SO in this class we're going to create a fake teacher dao to put into the teacher service to let us test the
+    // delete teacher method
+
+    // First thing we need to do is declare the class we want to mock
+    @Mock
+    static TeacherDAO td;
+
+    // Now that we've mocked our class we need to INJECT it into the teacher service
+    @InjectMocks
+    private static TeacherService ts;
+
+    // Before we can do any testing we need to initialize our mocks using mockito
+    @Before
+    public void initMocks(){
+        System.out.println("This happens before each test");
+        MockitoAnnotations.openMocks(this);
+    }
+
+    // The steps are in place right now to create our tests
+    @Test
+    public void deleteTeacherShouldReturnTrue(){
+
+        // We need to specify what will return when we make a call to the TeacherDAO
+
+        when(td.deleteTeacher(any())).thenReturn(1);
+
+        // We're now going to make sure that the service returns true
+
+        Assert.assertTrue(ts.deleteTeacher(new Teacher()));
+    }
+
+    // The steps are in place right now to create our tests
+    @Test
+    public void deleteTeacherShouldReturnFalse(){
+
+        // We need to specify what will return when we make a call to the TeacherDAO
+
+        when(td.deleteTeacher(any())).thenReturn(0);
+
+        // We're now going to make sure that the service returns true
+
+        Assert.assertFalse(ts.deleteTeacher(new Teacher()));
+
+
+    }
+
+
+
+}

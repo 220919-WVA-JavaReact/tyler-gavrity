@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
 
 public class TeacherDAOImpl implements TeacherDAO{
 
@@ -57,6 +58,11 @@ public class TeacherDAOImpl implements TeacherDAO{
 
     @Override
     public Teacher createTeacher(String first, String last, String username, String password) {
+        return null;
+    }
+
+    @Override
+    public List<Teacher> getAllTeachers() {
         return null;
     }
 }

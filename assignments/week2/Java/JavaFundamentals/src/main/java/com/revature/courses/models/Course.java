@@ -10,7 +10,10 @@ public class Course {
 
     private String title;
 
-    private int teacherId;
+    //private int teacherId;
+
+    private Teacher teacher;
+
 
     public Course(String courseNum, String title, int teacherId) {
         this.courseNum = courseNum;
