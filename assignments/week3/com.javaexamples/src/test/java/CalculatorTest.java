@@ -1,5 +1,5 @@
-import org.example.collections.testing.Calculator;
-import org.example.collections.testing.DivideByZeroException;
+import collections.testing.Calculator;
+import collections.testing.DivideByZeroException;
 import org.junit.*;
 
 public class CalculatorTest {

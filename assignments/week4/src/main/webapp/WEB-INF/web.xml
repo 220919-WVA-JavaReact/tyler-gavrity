@@ -1,0 +1,23 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!--    I want a deployment name so we can see some data about our project here-->
+    <!--    mvn clean-->
+    <!--    mvn tomcat7:deploy-->
+    <display-name>My first web app</display-name>
+
+    <!--    For each servlet I'll need to define two things the servelet itself and the mapping of the servelet-->
+
+    <servlet>
+        <servlet-name>SanityServlet</servlet-name>
+        <servlet-class>org.example.tomcatExample.SanityServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SanityServlet</servlet-name>
+        <url-pattern>/sanity</url-pattern>
+    </servlet-mapping>
+</web-app>

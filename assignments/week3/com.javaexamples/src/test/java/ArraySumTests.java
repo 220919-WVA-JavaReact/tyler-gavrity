@@ -1,4 +1,4 @@
-import org.example.collections.testing.ArraySum;
+import collections.testing.ArraySum;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
