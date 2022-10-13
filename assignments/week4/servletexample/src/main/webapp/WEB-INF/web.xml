@@ -13,7 +13,7 @@
 
     <servlet>
         <servlet-name>SanityServlet</servlet-name>
-        <servlet-class>org.example.tomcatExample.SanityServlet</servlet-class>
+        <servlet-class>org.example.servlets.SanityServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
