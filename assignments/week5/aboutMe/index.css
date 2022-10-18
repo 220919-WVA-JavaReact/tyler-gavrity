@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+.head{
+    text-align: center;
+    color:white;
+    
+}
+#head{
+    margin-top: 6%;
+}
+h3, h6{
+    border-top: 10em;
+}
+tr,th, td{
+    color: white;
+}
+
+table{
+    text-align: center;
+}
+.table{
+    display: flex;
+    justify-content:center;
+}
+ol{
+    color: white;
+}

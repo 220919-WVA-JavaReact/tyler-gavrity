@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="week4" />
         <module name="com.servlet" />
-        <module name="servletexample" />
       </profile>
     </annotationProcessing>
   </component>

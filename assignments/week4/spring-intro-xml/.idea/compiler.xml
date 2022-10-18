@@ -6,9 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="week4" />
-        <module name="com.servlet" />
-        <module name="servletexample" />
+        <module name="spring-intro-xml" />
       </profile>
     </annotationProcessing>
   </component>
